@@ -1,0 +1,53 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Coverage and tooling caches
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files and logs
+*.tmp
+*.bak
+*.swp
+*.swo
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Keep source, tests, evidence, traces, reports,
+# requirements.txt, and README.md under version control.

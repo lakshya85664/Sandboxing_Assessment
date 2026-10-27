@@ -1,0 +1,43 @@
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "validation_passed", "tool": "sandbox_transform"}
+{"event": "authorization_passed", "tool": "sandbox_transform"}
+{"event": "worker_started", "tool": "sandbox_transform"}
+{"elapsed_seconds": 8e-06, "event": "worker_completed", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "request_id": "req-task3-001", "status": "ok", "tool": "sandbox_transform"}
+{"event": "tool_rejected"}
+{"event": "request_completed", "status": "denied", "tool": "unknown_tool"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "authorization_denied", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "authorization_denied", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "different-user", "request_id": "req-task3-001", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "authorization_denied", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "validation_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "status": "invalid", "tool": "sandbox_transform"}
+{"event": "validation_rejected"}
+{"event": "request_completed", "status": "invalid"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "validation_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "status": "invalid", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "replay_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "request_id": "req-task3-001", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "replay_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "request_id": "req-task3-001", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "replay_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "request_id": "req-task3-001", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "replay_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "request_id": "req-task3-001", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "replay_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "request_id": "req-task3-001", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "replay_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "user-001", "request_id": "req-task3-001", "status": "denied", "tool": "sandbox_transform"}

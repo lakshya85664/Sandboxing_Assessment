@@ -1,0 +1,141 @@
+{
+  "topic": 19,
+  "assessment": "Implement Sandboxing in Code",
+  "scenario_count": 4,
+  "passed_scenarios": 4,
+  "all_scenarios_passed": true,
+  "metrics": {
+    "provider.attempts": 4,
+    "status.denied": 1,
+    "status.ok": 3,
+    "status.rate_limited": 1,
+    "status.timeout": 1,
+    "worker.elapsed_ms": 343
+  },
+  "scenarios": [
+    {
+      "scenario": "successful_transformation",
+      "status": "ok",
+      "expected_status": "ok",
+      "passed": true,
+      "error": null,
+      "events": [
+        {
+          "event": "tool_selected",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "validation_passed",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "authorization_passed",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "worker_started",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "worker_completed",
+          "tool": "sandbox_transform",
+          "elapsed_seconds": 0.091338
+        },
+        {
+          "event": "request_completed",
+          "status": "ok",
+          "request_id": "evidence-success",
+          "principal_id": "evidence-user",
+          "tool": "sandbox_transform"
+        }
+      ]
+    },
+    {
+      "scenario": "rate_limit_enforced",
+      "status": "rate_limited",
+      "expected_status": "rate_limited",
+      "passed": true,
+      "error": "Request rate limit exceeded",
+      "events": [
+        {
+          "event": "tool_selected",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "rate_limit_rejected",
+          "tool": "sandbox_transform",
+          "retry_after_seconds": 59.893
+        },
+        {
+          "event": "request_completed",
+          "status": "rate_limited",
+          "request_id": "evidence-rate-2",
+          "principal_id": "evidence-user",
+          "tool": "sandbox_transform"
+        }
+      ],
+      "setup_request_status": "ok"
+    },
+    {
+      "scenario": "duplicate_request_rejected",
+      "status": "denied",
+      "expected_status": "denied",
+      "passed": true,
+      "error": "Duplicate request ID",
+      "events": [
+        {
+          "event": "tool_selected",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "replay_rejected",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "request_completed",
+          "status": "denied",
+          "request_id": "evidence-replay",
+          "principal_id": "evidence-user",
+          "tool": "sandbox_transform"
+        }
+      ]
+    },
+    {
+      "scenario": "worker_timeout_handled",
+      "status": "timeout",
+      "expected_status": "timeout",
+      "passed": true,
+      "error": "Sandbox execution timed out",
+      "events": [
+        {
+          "event": "tool_selected",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "validation_passed",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "authorization_passed",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "worker_started",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "worker_timeout",
+          "tool": "sandbox_transform"
+        },
+        {
+          "event": "request_completed",
+          "status": "timeout",
+          "request_id": "evidence-timeout",
+          "principal_id": "evidence-user",
+          "tool": "sandbox_transform"
+        }
+      ]
+    }
+  ],
+  "trace_file": "traces/assessment_trace.jsonl"
+}

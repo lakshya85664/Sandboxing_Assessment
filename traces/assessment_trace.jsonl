@@ -1,0 +1,30 @@
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "validation_passed", "tool": "sandbox_transform"}
+{"event": "authorization_passed", "tool": "sandbox_transform"}
+{"event": "worker_started", "tool": "sandbox_transform"}
+{"elapsed_seconds": 0.091338, "event": "worker_completed", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "evidence-user", "request_id": "evidence-success", "status": "ok", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "validation_passed", "tool": "sandbox_transform"}
+{"event": "authorization_passed", "tool": "sandbox_transform"}
+{"event": "worker_started", "tool": "sandbox_transform"}
+{"elapsed_seconds": 0.105254, "event": "worker_completed", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "evidence-user", "request_id": "evidence-rate-1", "status": "ok", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "rate_limit_rejected", "retry_after_seconds": 59.893, "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "evidence-user", "request_id": "evidence-rate-2", "status": "rate_limited", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "validation_passed", "tool": "sandbox_transform"}
+{"event": "authorization_passed", "tool": "sandbox_transform"}
+{"event": "worker_started", "tool": "sandbox_transform"}
+{"elapsed_seconds": 0.147729, "event": "worker_completed", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "evidence-user", "request_id": "evidence-replay", "status": "ok", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "replay_rejected", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "evidence-user", "request_id": "evidence-replay", "status": "denied", "tool": "sandbox_transform"}
+{"event": "tool_selected", "tool": "sandbox_transform"}
+{"event": "validation_passed", "tool": "sandbox_transform"}
+{"event": "authorization_passed", "tool": "sandbox_transform"}
+{"event": "worker_started", "tool": "sandbox_transform"}
+{"event": "worker_timeout", "tool": "sandbox_transform"}
+{"event": "request_completed", "principal_id": "evidence-user", "request_id": "evidence-timeout", "status": "timeout", "tool": "sandbox_transform"}
